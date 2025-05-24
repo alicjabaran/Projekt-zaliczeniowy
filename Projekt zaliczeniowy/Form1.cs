@@ -131,6 +131,10 @@ namespace Projekt_zaliczeniowy
 
         private void checkGame()
         {
+
+            // komentarze wyników 
+
+
             if (GraczChoice == "rock" && MistrzChoice == "paper")
             {
                 MistrzScore += 1;
