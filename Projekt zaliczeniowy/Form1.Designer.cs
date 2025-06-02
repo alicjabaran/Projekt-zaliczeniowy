@@ -41,6 +41,7 @@
             this.TextCountdown = new System.Windows.Forms.Label();
             this.textScore = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.listViewHistory = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.picturePlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureCode)).BeginInit();
             this.SuspendLayout();
@@ -108,9 +109,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(133, 72);
+            this.label1.Font = new System.Drawing.Font("PMingLiU-ExtB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(125, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(57, 19);
             this.label1.TabIndex = 6;
             this.label1.Text = "Gracz";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -118,9 +120,10 @@
             // textRound
             // 
             this.textRound.AutoSize = true;
-            this.textRound.Location = new System.Drawing.Point(383, 219);
+            this.textRound.Font = new System.Drawing.Font("PMingLiU-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textRound.Location = new System.Drawing.Point(369, 215);
             this.textRound.Name = "textRound";
-            this.textRound.Size = new System.Drawing.Size(48, 13);
+            this.textRound.Size = new System.Drawing.Size(67, 16);
             this.textRound.TabIndex = 7;
             this.textRound.Text = "Runda 3";
             this.textRound.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -128,28 +131,33 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(632, 72);
+            this.label3.Font = new System.Drawing.Font("PMingLiU-ExtB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(601, 80);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.Size = new System.Drawing.Size(99, 19);
             this.label3.TabIndex = 8;
             this.label3.Text = "Mistrz Gry";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // TextCountdown
             // 
             this.TextCountdown.AutoSize = true;
-            this.TextCountdown.Location = new System.Drawing.Point(383, 168);
+            this.TextCountdown.Font = new System.Drawing.Font("PMingLiU-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextCountdown.Location = new System.Drawing.Point(394, 168);
             this.TextCountdown.Name = "TextCountdown";
-            this.TextCountdown.Size = new System.Drawing.Size(13, 13);
+            this.TextCountdown.Size = new System.Drawing.Size(16, 16);
             this.TextCountdown.TabIndex = 9;
-            this.TextCountdown.Text = "5";
+            this.TextCountdown.Text = "7";
             this.TextCountdown.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TextCountdown.Click += new System.EventHandler(this.TextCountdown_Click);
             // 
             // textScore
             // 
             this.textScore.AutoSize = true;
-            this.textScore.Location = new System.Drawing.Point(383, 114);
+            this.textScore.Font = new System.Drawing.Font("PMingLiU-ExtB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textScore.Location = new System.Drawing.Point(366, 114);
             this.textScore.Name = "textScore";
-            this.textScore.Size = new System.Drawing.Size(28, 13);
+            this.textScore.Size = new System.Drawing.Size(75, 32);
             this.textScore.TabIndex = 10;
             this.textScore.Text = "0 - 0";
             this.textScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -159,11 +167,26 @@
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.TimerCountDown);
             // 
+            // listViewHistory
+            // 
+            this.listViewHistory.FullRowSelect = true;
+            this.listViewHistory.GridLines = true;
+            this.listViewHistory.HideSelection = false;
+            this.listViewHistory.Location = new System.Drawing.Point(268, 25);
+            this.listViewHistory.MultiSelect = false;
+            this.listViewHistory.Name = "listViewHistory";
+            this.listViewHistory.Size = new System.Drawing.Size(268, 61);
+            this.listViewHistory.TabIndex = 11;
+            this.listViewHistory.UseCompatibleStateImageBehavior = false;
+            this.listViewHistory.View = System.Windows.Forms.View.Details;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Moccasin;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listViewHistory);
             this.Controls.Add(this.textScore);
             this.Controls.Add(this.TextCountdown);
             this.Controls.Add(this.label3);
@@ -198,6 +221,7 @@
         private System.Windows.Forms.Label TextCountdown;
         private System.Windows.Forms.Label textScore;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.ListView listViewHistory;
     }
 }
 
