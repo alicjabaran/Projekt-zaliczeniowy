@@ -24,14 +24,13 @@
 - System.Windows.Forms.Timer
 - Windows Forms
 - GDI+
-- ListView Control
 
 
 ## Funkcje
-- Gra 1 vs 1 – gracz wybiera swój ruch (kamień, papier lub nożyce), a komputer losowo wybiera swój
+- Gra 1 vs 1 – gracz wybiera swój ruch (kamień, papier lub nożyce), a komputer losowo wybiera swój.
 - Zegar odliczający czas – gracz ma ograniczony czas na dokonanie wyboru.
 - System punktacji – na bieżąco aktualizowany wynik gracza i przeciwnika.
-- Wyświetlanie odpowiedniej grafiki w zależności od wyniku
+- Grafiki - wyświetlanie odpowiednich grafik w zależności od wyboru gracza.
 - Restart gry – możliwość zresetowania wyników i rozpoczęcia nowej rozgrywki.
 - Historia rozgrywki – wbudowana lista (ListView), w której zapisywane są wszystkie rozegrane rundy wraz z wynikiem (wygrana, przegrana, remis).
 
