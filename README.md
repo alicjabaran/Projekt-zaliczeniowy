@@ -18,9 +18,13 @@
 
 
 ## Technologie użyte w projekcie
+- Microsoft Visual Studio
 - .NET Framework 4.7.2
 - Język C#
 - System.Windows.Forms.Timer
+- Windows Forms
+- GDI+
+- ListView Control
 
 
 ## Funkcje
@@ -36,7 +40,7 @@
 Wymagania systemowe:
 - System operacyjny: Windows
 - .NetFramework: minimum 4.7.2
-- Visual Studio
+- Microsoft Visual Studio
 
 Pliki wymagane do działania:
 - kamień.jpg, nożyce.jpg, papier.jpg, puste.jpg - grafiki wybranych przedmiotów w quizie
